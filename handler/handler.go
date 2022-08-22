@@ -70,7 +70,7 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if r.URL.Path == "/" {
-		http.Redirect(w, r, "https://github.com/jpillora/installer", http.StatusMovedPermanently)
+		http.Redirect(w, r, "https://github.com/" + h.Config.User +  "/installer", http.StatusMovedPermanently)
 		return
 	}
 	// calculate reponse type
