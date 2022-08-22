@@ -5,6 +5,10 @@ Quickly install pre-compiled binaries from Github releases.
 
 Installer is an HTTP server which returns shell scripts. The returned script will detect platform OS and architecture, choose from a selection of URLs, download the appropriate file, un(zip|tar|gzip) the file, find the binary (largest file) and optionally move it into your `PATH`. Useful for installing your favourite pre-compiled programs on hosts using only `curl`.
 
+## Editing
+
+[Open in GitPod](https://gitpod.io#https://github.com/anglinb/installer)
+
 ## Usage
 
 ```sh
